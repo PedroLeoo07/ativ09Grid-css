@@ -62,3 +62,63 @@ body{
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-widht: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto ;
+        grid-template-areas: 
+        "header"
+        "nav"
+         "aside"
+         "article"
+        "section"
+        "footer";
+    }
+
+    .header{
+        grid-area: header;
+        background-color: blue;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        height: 3rem;
+      }
+    
+      .nav{
+        grid-area: nav;
+        background-color: rgb(0, 195, 255);;
+        text-align: center;
+        color: black;
+        padding: 20px;
+        height: 3rem;
+      }
+    
+      .aside{
+        grid-area: aside;
+        background-color: white;
+        padding: 20px;
+        height: 49rem;
+        width: 20rem;
+      }
+    
+    .article{
+        grid-area: article;
+        background-color: salmon;
+        padding: 20px;
+    }
+    
+    .section{
+        grid-area: section;
+        background-color: yellow;
+        padding: 20px;
+    }
+        
+    .footer{
+        grid-area: footer;  
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+}
